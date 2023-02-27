@@ -1,0 +1,165 @@
+/* ****************************************************/
+/* This semester we will be using my variation of    */
+/* Josh Comeau's CSS Reset instead of normalize      */
+/* Read more at                                      */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*****************************************************/
+/* Always add your CSS below the reset CSS           */
+/*****************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-font: #333;
+  --color-primary: #205373; /* dark blue */
+  --color-secondary: #517ea6; /* light blue */
+  --color-accent: #a6653f; /* orange brown */
+  --color-accent-light: #f2bc8d; /* light tan */
+}
+
+* {
+  /* margin: 0; */
+  /* this an experimental line-height; if it breaks, add line-height: 1.5 to body */
+  line-height: calc(1em + 0.5rem);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* until you get a feel for overflow, I'll keep these next two commented out */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* temp CSS for HTML only assignments */
+picture img {
+  width: 100%;
+}
+
+svg {
+  width: 200px;
+}
+
+/* temp fix to size about img */
+img[srcset] {
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* temporary fix to size svg images */
+img[src$="svg"] {
+  width: 200px;
+}
+
+/************ add your CSS here **************** */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Hind", "Raleway", "sans-serif";
+  color: var(--color-font);
+}
+
+a {
+  text-decoration: none;
+  color: #205373;
+}
+
+a[href]:hover {
+  color: var(--color-accent);
+}
+
+a[href]:visited {
+  /* color: #f2bc8d; */
+}
+
+a.button {
+  background-color: rgb(108, 165, 212);
+  padding: 2vw;
+  border-radius: 8px;
+  display: inline-block;
+  margin-left: 20px;
+}
+a.button:hover {
+  transition: background-color 300ms ease, color 300ms ease;
+  background-color: #f2bc8d;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #5d8eac;
+  margin-bottom: 0;
+  padding: 40px;
+}
+
+p.footer {
+  margin: 0;
+}
+
+main {
+  max-width: fit-content;
+}
+
+body {
+  font-family: "Hind", "Raleway", "sans-serif";
+  color: var(--color-font);
+}
+
+.nav {
+  display: flex;
+  margin-bottom: 5vw;
+}
+.navbox {
+  margin: 0.5vw;
+}
+
+main h1 {
+  margin-top: 5vw;
+}
+
+main h2 {
+  margin-top: 5vw;
+}
+
+footer {
+  margin-top: 5vw;
+}
