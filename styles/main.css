@@ -198,7 +198,7 @@ footer {
 
 .hero {
   position: relative;
-  height: 50%;
+  /* height: 50%; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -229,9 +229,9 @@ footer {
   flex: 1 1 0;
 }
 
-.card image:hover {
+.card:hover {
   transition: box-shadow 300ms ease;
-  size: 110%;
+  transform: scale(1.05);
 }
 .card h2 {
   margin: 0;
