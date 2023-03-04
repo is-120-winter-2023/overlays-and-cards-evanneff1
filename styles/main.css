@@ -219,15 +219,33 @@ footer {
   padding: 0.5vw;
   text-justify: inter-word;
   margin: 0;
+  gap: 1rem;
 }
 
 .card {
   /* margin: 1vw; */
   outline: 2px solid rgb(132, 130, 130);
   border-radius: 3px;
+  flex: 1 1 0;
+}
+
+.card image:hover {
+  transition: box-shadow 300ms ease;
+  size: 110%;
 }
 .card h2 {
   margin: 0;
   padding-top: 1vw;
   margin-left: 0.5vw;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
