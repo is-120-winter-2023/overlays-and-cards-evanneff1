@@ -249,3 +249,7 @@ footer {
   padding: 0;
   position: absolute;
 }
+
+.hero h1 {
+  font-size: clamp(3.5rem, 5vw + 1rem, 5rem);
+}
